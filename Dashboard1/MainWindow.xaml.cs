@@ -22,12 +22,13 @@ namespace WPFCRM
     {
         Dashboard db = new Dashboard();
         Projects pj = new Projects();
+        Customer cs = new Customer();
         public MainWindow()
         {
             InitializeComponent();
-
-            Consumo consumo = new Consumo();
-            DataContext = new ConsumoViewModel(consumo);
+            MainPanel.Children.Add(db);
+            //Consumo consumo = new Consumo();
+            //DataContext = new ConsumoViewModel(consumo);
         }
 
         private void ButtonFechar_Click(object sender, RoutedEventArgs e)
@@ -53,6 +54,9 @@ namespace WPFCRM
                 case ("ProjectsBtn"):
                     switchPanel(pj);
                     break;
+                case ("CustomerBtn"):
+                    switchPanel(cs);
+                    break;
             }
 
         }
@@ -63,6 +67,12 @@ namespace WPFCRM
                 MainPanel.Children.Clear();
                 MainPanel.Children.Add(uc);
             }
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+                Close();
         }
     }
 

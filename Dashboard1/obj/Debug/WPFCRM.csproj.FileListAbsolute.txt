@@ -23,3 +23,5 @@ D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\WPFCRM.exe
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\WPFCRM.pdb
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Projects.g.cs
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Projects.baml
+D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Customer.g.cs
+D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Customer.baml
