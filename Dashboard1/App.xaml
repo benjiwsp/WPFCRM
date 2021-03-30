@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Dashboard1"
              StartupUri="MainWindow.xaml">
+    
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -11,6 +12,27 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Red.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontFamily" Value="Verdana" />
+                <Setter Property="Foreground" Value="#D9732D"/>
+            </Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="FontSize" Value="23" />
+                <Setter Property="FontFamily" Value="Verdana" />
+                <Setter Property="Foreground" Value="#FFFFFF"/>
+                <Setter Property="Background" Value="#796D5B"/>
+                <Setter Property="Margin" Value="0 10 0 10"/>
+                <Setter Property="Height" Value="30"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontFamily" Value="Verdana" />
+                <Setter Property="Foreground" Value="#D9732D"/>
+                <Setter Property="Background" Value="#3A3A3F"/>
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

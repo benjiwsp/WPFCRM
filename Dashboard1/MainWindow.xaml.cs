@@ -20,9 +20,9 @@ namespace WPFCRM
     /// </summary>
     public partial class MainWindow : Window
     {
-        Dashboard db = new Dashboard();
-        Projects pj = new Projects();
-        Customer cs = new Customer();
+        public Dashboard db = new Dashboard();
+        public Projects pj = new Projects();
+        public Customer cs = new Customer();
         public MainWindow()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace WPFCRM
         private void SwitchPanel_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-          
+
 
             switch (btn.Name.ToString())
             {

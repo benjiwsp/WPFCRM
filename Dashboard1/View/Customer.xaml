@@ -6,53 +6,59 @@
              xmlns:local="clr-namespace:WPFCRM.View"
              mc:Ignorable="d" 
              d:DesignHeight="990" d:DesignWidth="1660" Background="#FFFFFF">
-    
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-        </Grid.RowDefinitions>
+    <Grid x:Name="CustPanel">
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Background="Gray" Grid.ColumnSpan="6">
-            <Button Content="Add Customer" 
+            <StackPanel Orientation="Horizontal" Background="Gray" Grid.ColumnSpan="6">
+                <Button Content="Add Customer" 
                     Width="300" Height="60" 
                     HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Background ="#3A3A3F" Foreground="#D9732D"
+                    Margin="10" Click="AddCustBtn_Click"/>
+                <Button Content="Export Customer to CSV" 
+                    Width="300" Height="60" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Background ="#3A3A3F" Foreground="#D9732D"
                     Margin="10"/>
 
 
-
-        </StackPanel>
-        <DataGrid x:Name="CustGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" 
+            </StackPanel>
+            <DataGrid x:Name="CustGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" 
                       Grid.Row="1" Grid.RowSpan="4" Grid.ColumnSpan="6" Background="#FFFFFF">
-            <DataGrid.Resources>
-                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
-                    <Setter Property="Background" Value="#3A3A3F" />
-                    <Setter Property="Foreground" Value="#D9732D" />
-                </Style>
-            </DataGrid.Resources>
-            <DataGrid.Columns>
+                <DataGrid.Resources>
+                    <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#3A3A3F" />
+                        <Setter Property="Foreground" Value="#D9732D" />
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
 
-                <DataGridTextColumn Header="Name" Width="150" Binding="{Binding Name}"/>
-                <DataGridTextColumn Header="Age" Width="100" Binding="{Binding Age}"/>
-                <DataGridComboBoxColumn Width="80" Header="Sex" 
+                    <DataGridTextColumn Header="Name" Width="150" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Age" Width="100" Binding="{Binding Age}"/>
+                    <DataGridComboBoxColumn Width="80" Header="Sex" 
                                         SelectedItemBinding="{Binding Sex}" />
-                <!--ItemsSource="{Binding Source={StaticResource sexEnum}}"/>-->
-                <DataGridCheckBoxColumn Header="Pass Exam?" Width="250" 
+                    <!--ItemsSource="{Binding Source={StaticResource sexEnum}}"/>-->
+                    <DataGridCheckBoxColumn Header="Pass Exam?" Width="250" 
                                         Binding="{Binding Pass}"/>
-                <DataGridHyperlinkColumn Header="Email" Width="250" 
+                    <DataGridHyperlinkColumn Header="Email" Width="250" 
                                          Binding="{Binding Email}"/>
-            </DataGrid.Columns>
-        </DataGrid>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </Grid>
 </UserControl>

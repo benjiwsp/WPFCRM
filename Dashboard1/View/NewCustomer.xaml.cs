@@ -12,23 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using WPFCRM.Properties;
 namespace WPFCRM.View
 {
     /// <summary>
-    /// Interaction logic for Customer.xaml
+    /// Interaction logic for NewCustomer.xaml
     /// </summary>
-    public partial class Customer : UserControl
+    public partial class NewCustomer : UserControl
     {
-        NewCustomer newCust = new NewCustomer();
-        public Customer()
+        public NewCustomer()
         {
             InitializeComponent();
         }
 
-        private void AddCustBtn_Click(object sender, RoutedEventArgs e)
+        private void CancelNewCustBtn_Click(object sender, RoutedEventArgs e)
         {
-            CustPanel.Children.Add(newCust);
+           
         }
     }
 }
