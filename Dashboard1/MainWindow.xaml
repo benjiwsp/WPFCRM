@@ -146,10 +146,10 @@
                     </Grid>
                 </Button>
 
-                <Button Margin="10" Background="#3A3A3F" BorderBrush="#061739" Height="40">
+                <Button Margin="10" Background="#3A3A3F" BorderBrush="#061739" Click="SwitchPanel_Click" x:Name="StaffBtn" Height="40">
                     <Grid Width="150">
                         <materialDesign:PackIcon Kind="TshirtCrew" VerticalAlignment="Center"/>
-                        <TextBlock HorizontalAlignment="Center" Text="PRODUTOS" FontFamily="Champagne &amp; Limousines"/>
+                        <TextBlock HorizontalAlignment="Center" Text="Staff" FontFamily="Champagne &amp; Limousines"/>
                     </Grid>
                 </Button>
 

@@ -20,9 +20,10 @@ namespace WPFCRM
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Dashboard db = new Dashboard();
-        public Projects pj = new Projects();
-        public Customer cs = new Customer();
+        Dashboard db = new Dashboard();
+        Projects pj = new Projects();
+        Customer cs = new Customer();
+        Staff stuff = new Staff();
         public MainWindow()
         {
             InitializeComponent();
@@ -56,6 +57,9 @@ namespace WPFCRM
                     break;
                 case ("CustomerBtn"):
                     switchPanel(cs);
+                    break;
+                case ("StaffBtn"):
+                    switchPanel(stuff);
                     break;
             }
 

@@ -6,7 +6,6 @@ D:\Dev - Projects\WPFCRM\Dashboard1\bin\Debug\MaterialDesignColors.dll
 D:\Dev - Projects\WPFCRM\Dashboard1\bin\Debug\MaterialDesignThemes.Wpf.dll
 D:\Dev - Projects\WPFCRM\Dashboard1\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\Dev - Projects\WPFCRM\Dashboard1\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\WPFCRM.csprojAssemblyReference.cache
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\MainWindow.g.cs
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Dashboard.g.cs
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\App.g.cs
@@ -27,3 +26,5 @@ D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Customer.g.cs
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Customer.baml
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\NewCustomer.g.cs
 D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\NewCustomer.baml
+D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Staff.g.cs
+D:\Dev - Projects\WPFCRM\Dashboard1\obj\Debug\View\Staff.baml
